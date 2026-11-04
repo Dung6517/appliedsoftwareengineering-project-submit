@@ -1,0 +1,8 @@
+{
+  "starter_repo": "REPLACE_VOI_STARTER_REPO",
+  "starter_commit": "REPLACE_VOI_STARTER_COMMIT",
+  "fork_url": "REPLACE_VOI_FORK_URL",
+  "final_commit": "REPLACE_VOI_FINAL_COMMIT",
+  "release_tag": "REPLACE_VOI_RELEASE_TAG",
+  "ci_run_url": "REPLACE_VOI_CI_RUN_URL"
+}

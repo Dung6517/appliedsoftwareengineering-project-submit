@@ -35,7 +35,10 @@ SUBMISSIONS_DIR = ROOT / "submissions"
 TEMPLATE_NAME = "_TEMPLATE"
 
 REQUIRED_SUBMISSION_FIELDS = ["case_study_slug", "case_study_id", "group_code", "members"]
-VALID_CASE_STUDY_SLUGS = {"may_day", "suy_tim", "alzheimer", "dreye", "dai_thao_duong", "nha_cho_thue", "ban_do_lich_su", "ke_hoach_hoc_tap"}
+VALID_CASE_STUDY_SLUGS = {"may_day", "suy_tim", "alzheimer", "dreye", "dai_thao_duong", "nha_cho_thue", "ban_do_lich_su", "ke_hoach_hoc_tap", "may_day_sprint", "hoang_mai_toan"}
+BKT_SLUGS = {"may_day_sprint", "hoang_mai_toan"}
+BKT_SOURCE_REF_FIELDS = ("starter_repo", "starter_commit", "fork_url", "final_commit", "release_tag", "ci_run_url")
+BKT_ARTIFACT_FILES = ("REQUIREMENTS.md", "DECISIONS.md", "TEST_REPORT.md", "SECURITY_PRIVACY_CHECKLIST.md", "AI_USE.md", "CONTRIBUTIONS.md")
 MAX_FILE_SIZE_MB = 10
 
 # Regex mẫu hình phổ biến của khóa API/secret — lưới an toàn cuối, không
@@ -76,7 +79,7 @@ def scan_secrets(file_path: Path) -> list[str]:
 def validate_folder(folder: Path) -> list[str]:
     errors: list[str] = []
 
-    if folder.name == TEMPLATE_NAME:
+    if folder.name.startswith(TEMPLATE_NAME):
         errors.append(f"'{folder.name}' là thư mục mẫu — không được nộp trực tiếp, hãy copy sang thư mục mới.")
         return errors
 
@@ -118,6 +121,35 @@ def validate_folder(folder: Path) -> list[str]:
     readme_path = folder / "README.md"
     if not readme_path.exists():
         errors.append("Thiếu file 'README.md' tóm tắt bài làm.")
+
+    if manifest_path.exists() and slug in BKT_SLUGS:
+        source_ref_path = folder / "source-ref.json"
+        if not source_ref_path.is_file():
+            errors.append("Thiếu file 'source-ref.json' bắt buộc cho BKT.")
+        else:
+            try:
+                source_ref = json.loads(source_ref_path.read_text(encoding="utf-8"))
+            except json.JSONDecodeError as e:
+                errors.append(f"'source-ref.json' lỗi cú pháp JSON: {e}")
+            else:
+                if not isinstance(source_ref, dict):
+                    errors.append("'source-ref.json' phải là JSON object.")
+                else:
+                    for field in BKT_SOURCE_REF_FIELDS:
+                        value = source_ref.get(field)
+                        if not isinstance(value, str) or not value.strip():
+                            errors.append(f"'source-ref.json' thiếu hoặc rỗng trường bắt buộc '{field}'.")
+
+        artifacts_dir = folder / "artifacts"
+        if not artifacts_dir.is_dir():
+            errors.append("Thiếu thư mục 'artifacts/' bắt buộc cho BKT.")
+        else:
+            for name in BKT_ARTIFACT_FILES:
+                artifact = artifacts_dir / name
+                if not artifact.is_file():
+                    errors.append(f"Thiếu file 'artifacts/{name}' bắt buộc cho BKT.")
+                elif artifact.stat().st_size == 0:
+                    errors.append(f"File 'artifacts/{name}' rỗng — cần điền nội dung.")
 
     # Quét toàn bộ file trong thư mục: kích thước + mẫu hình secret
     for f in folder.rglob("*"):
