@@ -44,3 +44,23 @@ bên dưới.
    không sửa được qua PR thường.
 5. **Quy tắc file:** tên không dấu, không khoảng trắng, không họ tên; mỗi file < 10MB; không commit
    khoá API, token, `.env`.
+
+---
+
+## Slide tuần 6 bản v2 — PR #12 (góp ý 08/11/2026)
+
+- **Bài nộp:** `slides/Slide_Tuan6_v2.pptx` (PR #12). Bổ sung file mới, bản gốc `Slide_Tuan6.pptx` giữ nguyên.
+- **Kiểm tra tự động:** ✅ hợp lệ
+
+### Thay đổi so với bản gốc
+
+- ✅ Thêm 2 slide liệt kê đủ FR-01 → FR-20, có mức ưu tiên và truy ngược về vấn đề P1–P7.
+- ✅ NFR được viết lại thành NFR-01 → NFR-11, gắn với đặc tính ISO/IEC 25010, mỗi NFR có mục tiêu định lượng và cách kiểm chứng. NFR-05 nêu rõ không lưu họ tên thật hay số định danh, và dùng mã `BN-TEST-xxx`.
+- Sắp xếp lại thứ tự các slide user story.
+
+### Cần cập nhật (bổ sung cho các mục ở trên)
+
+1. **Backend vẫn chưa chốt ngôn ngữ/framework.** Slide C2 chỉ ghi "Backend API: Nghiệp vụ và Rule Engine". Mục 2 phía trên vẫn còn hiệu lực.
+2. **Bối cảnh bệnh viện.** Slide 5 ghi phạm vi "Ngoại trú BV Hữu Nghị". Nhóm ghi rõ đây là **bối cảnh mô phỏng**: không tích hợp hệ thống bệnh viện (khớp với slide C1) và không dùng dữ liệu bệnh nhân thật. Dẫn bài báo về bệnh án điện tử của bệnh viện thì được, nhưng không nên viết như thể hệ thống được triển khai tại đó.
+3. **"Kênh bệnh nhân: Chưa chốt"** (slide 5) và **ngưỡng bỏ lỡ 120 phút** ("cần ý kiến bác sĩ") cần được chốt hoặc ghi thành giả định có chủ đích, trước khi bắt đầu code các FR liên quan (FR-10, FR-12).
+4. Lần sau, nếu chỉ sửa slide của tuần đã nộp, nhóm nên ghi tóm tắt thay đổi trong mô tả PR (mô tả PR #12 đang trống).
