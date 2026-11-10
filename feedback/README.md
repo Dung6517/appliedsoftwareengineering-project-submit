@@ -11,4 +11,4 @@ qua PR nộp bài.
 | 173820_n03 | [`submissions/ke_hoach_hoc_tap_173820_n03/`](../submissions/ke_hoach_hoc_tap_173820_n03/) (CS-8 Kế hoạch học tập) | Tuần 6 đã có trong repo; tuần sau nhóm nộp bằng PR | [ke_hoach_hoc_tap_173820_n03.md](ke_hoach_hoc_tap_173820_n03.md) |
 | 173820_n27 | [`submissions/suy_tim_173820_n27/`](../submissions/suy_tim_173820_n27/) (CS-2 Suy tim) | Tuần 6 đã có trong repo; tuần sau nhóm nộp bằng PR | [suy_tim_173820_n27.md](suy_tim_173820_n27.md) |
 | 173820_n43 | [`submissions/nha_cho_thue_173820_n43/`](../submissions/nha_cho_thue_173820_n43/) (CS-6 Nhà cho thuê) | Tuần 6 trong repo; tuần 7 (PR #13) đã góp ý | [nha_cho_thue_173820_n43.md](nha_cho_thue_173820_n43.md) |
-| nhom49 | PR #1 (Quản lý thiết bị y tế) | Mở, CI chưa hợp lệ | [quan_ly_thiet_bi_y_te_nhom49.md](quan_ly_thiet_bi_y_te_nhom49.md) |
+| nhom49 | PR #1 (Quản lý thiết bị y tế, đã đóng) | Từ 10/11/2026 đề có slug CS-9 `quan_ly_thiet_bi_y_te`; nhóm nộp lại bằng PR mới | [quan_ly_thiet_bi_y_te_nhom49.md](quan_ly_thiet_bi_y_te_nhom49.md) |

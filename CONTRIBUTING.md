@@ -8,7 +8,7 @@ submissions/<case_study_slug>_<ma_nhom>/
 
 - `case_study_slug` — đúng slug case study trong
   [ngân hàng case study](https://fossbk-spec.github.io/ktpmud-book/do_an_mon_hoc)
-  (`may_day`, `suy_tim`, `alzheimer`, `dreye`, `dai_thao_duong`, `nha_cho_thue`, `ban_do_lich_su`, hoặc `ke_hoach_hoc_tap`).
+  (`may_day`, `suy_tim`, `alzheimer`, `dreye`, `dai_thao_duong`, `nha_cho_thue`, `ban_do_lich_su`, `ke_hoach_hoc_tap`, hoặc `quan_ly_thiet_bi_y_te`).
 - `ma_nhom` — mã nhóm giảng viên cấp, dạng `<mã lớp>_<số nhóm>` (vd
   `173820_n01` = lớp 173820, nhóm N01) — **không dùng họ tên thật hay MSSV**
   trong tên thư mục (xem Mục 3 về quyền riêng tư).

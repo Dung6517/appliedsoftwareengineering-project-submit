@@ -58,6 +58,7 @@ ktpmud-project/
 | `nha_cho_thue` | CS-6: Phần mềm quản lý nhà cho thuê (nhà trọ, chung cư mini) | Đề ngoài y tế, nhóm đề xuất, giảng viên đã duyệt |
 | `ban_do_lich_su` | CS-7: Website Bản đồ Lịch sử Việt Nam | Đề ngoài y tế, nhóm đề xuất, giảng viên đã duyệt |
 | `ke_hoach_hoc_tap` | CS-8: Hệ thống hỗ trợ theo dõi tiến độ và lập kế hoạch học tập cho sinh viên | Đề ngoài y tế, nhóm đề xuất, giảng viên đã duyệt |
+| `quan_ly_thiet_bi_y_te` | CS-9: Hệ thống quản lý thiết bị y tế | Đề nhóm đề xuất (nhom49), giảng viên đã duyệt 10/11/2026 |
 
 Slug phải khớp đúng tên trong
 [bảng case study](https://fossbk-spec.github.io/ktpmud-book/do_an_mon_hoc).

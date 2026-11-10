@@ -19,7 +19,7 @@ ví dụ. Nhóm khác thay tên thư mục, slug, MSSV cho đúng của mình.
 | Nhánh (branch) | `submit/<case_study_slug>-<mã lớp>_<số nhóm>` | `submit/dai_thao_duong-173820_n01` |
 | Tên file | Không dấu, không khoảng trắng, **không họ tên** | `report/BaoCao_Tuan6.docx` |
 
-Slug hợp lệ: `may_day`, `suy_tim`, `alzheimer`, `dreye`, `dai_thao_duong`, `nha_cho_thue`, `ban_do_lich_su`, `ke_hoach_hoc_tap`. Chỉ chữ thường, số,
+Slug hợp lệ: `may_day`, `suy_tim`, `alzheimer`, `dreye`, `dai_thao_duong`, `nha_cho_thue`, `ban_do_lich_su`, `ke_hoach_hoc_tap`, `quan_ly_thiet_bi_y_te`. Chỉ chữ thường, số,
 gạch dưới.
 
 Cấu trúc thư mục:

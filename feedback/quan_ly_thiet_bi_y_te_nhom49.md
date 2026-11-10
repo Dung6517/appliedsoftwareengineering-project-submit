@@ -31,3 +31,10 @@ python scripts/validate_submission.py submissions/<thu_muc_nhom>
 
 Nếu đổi case study thì đổi cả tên thư mục và tên nhánh theo quy ước
 `submissions/<case_study_slug>_nhom49/` và `submit/<case_study_slug>-nhom49`.
+
+## Cập nhật 10/11/2026
+
+Giảng viên đã duyệt đề "Hệ thống quản lý thiết bị y tế" thành **CS-9**, slug `quan_ly_thiet_bi_y_te`
+(trả lời issue #24). Mục 2 ở trên không còn áp dụng. PR #1 đã đóng; nhóm nộp bài tập lớn bằng PR mới, thư mục
+`submissions/quan_ly_thiet_bi_y_te_<ma_nhom>/`, `submission.json` có `"case_study_slug": "quan_ly_thiet_bi_y_te"`
+và `"case_study_id": "CS-9"`. Bài Hack Marathon vẫn dùng slug `may_day_sprint`.

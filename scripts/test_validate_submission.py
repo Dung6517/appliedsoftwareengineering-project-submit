@@ -51,6 +51,9 @@ class ValidateSubmissionTests(unittest.TestCase):
     def test_existing_cs_passes_without_bkt_files(self):
         self.assertEqual(validate_folder(self.make_submission("may_day", bkt=False)), [])
 
+    def test_cs9_quan_ly_thiet_bi_y_te_passes(self):
+        self.assertEqual(validate_folder(self.make_submission("quan_ly_thiet_bi_y_te", bkt=False)), [])
+
     def test_complete_ruleengine_bkt_passes(self):
         self.assertEqual(validate_folder(self.make_submission()), [])
 

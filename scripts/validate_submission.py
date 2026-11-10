@@ -35,7 +35,7 @@ SUBMISSIONS_DIR = ROOT / "submissions"
 TEMPLATE_NAME = "_TEMPLATE"
 
 REQUIRED_SUBMISSION_FIELDS = ["case_study_slug", "case_study_id", "group_code", "members"]
-VALID_CASE_STUDY_SLUGS = {"may_day", "suy_tim", "alzheimer", "dreye", "dai_thao_duong", "nha_cho_thue", "ban_do_lich_su", "ke_hoach_hoc_tap", "may_day_sprint", "hoang_mai_toan"}
+VALID_CASE_STUDY_SLUGS = {"may_day", "suy_tim", "alzheimer", "dreye", "dai_thao_duong", "nha_cho_thue", "ban_do_lich_su", "ke_hoach_hoc_tap", "quan_ly_thiet_bi_y_te", "may_day_sprint", "hoang_mai_toan"}
 BKT_SLUGS = {"may_day_sprint", "hoang_mai_toan"}
 BKT_SOURCE_REF_FIELDS = ("starter_repo", "starter_commit", "fork_url", "final_commit", "release_tag", "ci_run_url")
 BKT_ARTIFACT_FILES = ("REQUIREMENTS.md", "DECISIONS.md", "TEST_REPORT.md", "SECURITY_PRIVACY_CHECKLIST.md", "AI_USE.md", "CONTRIBUTIONS.md")
