@@ -1,0 +1,8 @@
+{
+  "starter_repo": "ktpmud-bkt-ruleengine-starter",
+  "starter_commit": "REPLACE_VOI_STARTER_COMMIT",
+  "fork_url": "https://github.com/Dung6517/bkt-2026-v1/tree/main",
+  "final_commit": "REPLACE_VOI_FINAL_COMMIT",
+  "release_tag": "REPLACE_VOI_RELEASE_TAG",
+  "ci_run_url": "REPLACE_VOI_CI_RUN_URL"
+}
