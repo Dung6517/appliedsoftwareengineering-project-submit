@@ -1,5 +1,6 @@
-BKT Rule Engine
-Nhóm: REPLACE_VOI_MA_NHOM
-Tóm tắt sản phẩm: REPLACE_VOI_TOM_TAT
-Cài đặt, chạy và kiểm thử từ clean checkout: REPLACE_VOI_HUONG_DAN
-Slide/demo: slides/
+# BKT Rule Engine
+
+- Nhóm: n02
+- Tóm tắt sản phẩm: tạm chưa
+- Cài đặt, chạy và kiểm thử từ clean checkout: tạm chưa
+- Slide/demo: `slides/`
