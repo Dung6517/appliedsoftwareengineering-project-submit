@@ -62,6 +62,11 @@ PLACEHOLDER_VALUES = {
 }
 
 
+def is_placeholder(value: object) -> bool:
+    """Giá trị mẫu của template: có trong PLACEHOLDER_VALUES hoặc bắt đầu bằng 'REPLACE_VOI'."""
+    return isinstance(value, str) and (value.strip() in PLACEHOLDER_VALUES or value.strip().startswith("REPLACE_VOI"))
+
+
 def scan_secrets(file_path: Path) -> list[str]:
     if file_path.suffix.lower() in {".png", ".jpg", ".jpeg", ".pdf", ".zip", ".pkl", ".h5", ".pt"}:
         return []
@@ -106,7 +111,7 @@ def validate_folder(folder: Path) -> list[str]:
         for field, value in manifest.items():
             values = value if isinstance(value, list) else [value]
             for v in values:
-                if isinstance(v, str) and v.strip() in PLACEHOLDER_VALUES:
+                if is_placeholder(v):
                     errors.append(
                         f"'submission.json' trường '{field}' vẫn còn giá trị mẫu ('{v}') — cần điền thật."
                     )
@@ -139,6 +144,10 @@ def validate_folder(folder: Path) -> list[str]:
                         value = source_ref.get(field)
                         if not isinstance(value, str) or not value.strip():
                             errors.append(f"'source-ref.json' thiếu hoặc rỗng trường bắt buộc '{field}'.")
+                        elif is_placeholder(value):
+                            errors.append(
+                                f"'source-ref.json' trường '{field}' vẫn còn giá trị mẫu ('{value}') — cần điền thật."
+                            )
 
         artifacts_dir = folder / "artifacts"
         if not artifacts_dir.is_dir():

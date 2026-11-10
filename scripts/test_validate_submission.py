@@ -64,6 +64,22 @@ class ValidateSubmissionTests(unittest.TestCase):
         (folder / "artifacts").rmdir()
         self.assertTrue(any("artifacts/" in error for error in validate_folder(folder)))
 
+    def test_source_ref_template_placeholder_fails(self):
+        folder = self.make_submission()
+        path = folder / "source-ref.json"
+        data = json.loads(path.read_text(encoding="utf-8"))
+        data["ci_run_url"] = "REPLACE_VOI_CI_RUN_URL"
+        path.write_text(json.dumps(data), encoding="utf-8")
+        self.assertTrue(any("ci_run_url" in e and "giá trị mẫu" in e for e in validate_folder(folder)))
+
+    def test_submission_bkt_template_id_fails(self):
+        folder = self.make_submission()
+        path = folder / "submission.json"
+        data = json.loads(path.read_text(encoding="utf-8"))
+        data["case_study_id"] = "REPLACE_VOI_MA_BKT"
+        path.write_text(json.dumps(data), encoding="utf-8")
+        self.assertTrue(any("case_study_id" in e for e in validate_folder(folder)))
+
     def test_missing_source_ref_fails(self):
         folder = self.make_submission()
         (folder / "source-ref.json").unlink()
