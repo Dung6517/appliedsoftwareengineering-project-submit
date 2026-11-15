@@ -19,7 +19,7 @@
 | REQUIREMENTS.md | Xong | |
 | decision-table.md | Xong | |
 | README.MD | Xong | |
-| source-ref.json | Đang | |
+| source-ref.json | Xong | |
 
 ### 1.3. Timeline dự kiến đến khi hoàn thành
 | Việc | Vai trò phụ trách | Mốc (CP2 15/11 · M3 · Freeze 19/11 · M4 20/11) | Ngày dự kiến |
