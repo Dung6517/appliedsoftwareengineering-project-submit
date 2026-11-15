@@ -2,7 +2,7 @@
   "starter_repo": "https://github.com/fossbk-spec/ktpmud-bkt-ruleengine-starter",
   "starter_commit": "8e81b2a2a0d6ea17b3f03b89e1b5acfd9bf7b739",
   "fork_url": "https://github.com/Dung6517/bkt-2026-v1/",
-  "final_commit": "REPLACE_VOI_FINAL_COMMIT",
-  "release_tag": "REPLACE_VOI_RELEASE_TAG",
-  "ci_run_url": "REPLACE_VOI_CI_RUN_URL"
+  "final_commit": "bc7df5fa2ecbb6f880a703abf5c043ffaf70ae0b",
+  "release_tag": "bkt-2026-n02-rc1",
+  "ci_run_url": null
 }
