@@ -24,10 +24,11 @@
 ### 1.3. Timeline dự kiến đến khi hoàn thành
 | Việc | Vai trò phụ trách | Mốc (CP2 15/11 · M3 · Freeze 19/11 · M4 20/11) | Ngày dự kiến |
 |---|---|---|---|
-| Checkpoint 2 | | Checkpoint 2 | 17/11 |
+| Hoàn thành trước Checkpoint 2 | Demo nội bộ | Checkpoint 2 | 17/11 |
+| 
 
 ### 1.4. Rủi ro / đang vướng
-- 
+- Cách tạo các file như PROGRESS.md, AI_USE.MD, ...
 
 ### 1.5. Câu hỏi cho GV
 - Q1: 
@@ -35,12 +36,15 @@
 ### 1.6. Phân công (alias hoặc vai trò, KHÔNG ghi họ tên/MSSV)
 | Alias / vai trò | Đầu việc chính | Commit/PR tiêu biểu |
 |---|---|---|
+| Code/case | Hỗ trợ chạy thuật toán | bc7df5fa2ecbb6f880a703abf5c043ffaf70ae0b |
+| Nộp bài | Nộp bài, kiểm tra file nộp | This |
 
 ## PC-2 — 18/11/2026
 
 ### 2.1. Đối chiếu timeline PC-1
 | Việc (theo bảng 1.3) | Kế hoạch | Thực tế | Lệch & lý do |
 |---|---|---|---|
+| Checkpoint 1 | 8/11 | 10/11 | Vướng lịch trình thi giữa kỳ |
 
 ### 2.2. Tiến độ theo acceptance criteria (cập nhật toàn bộ bảng 1.1)
 | Mã | Trạng thái | Bằng chứng | Ghi chú |
