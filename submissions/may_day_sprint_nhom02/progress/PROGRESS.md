@@ -10,18 +10,18 @@
 <!-- Track A: A-01…A-11 · Track B: B-01…B-12 (đề thi Mục 7.3 / 8.3). Đủ mọi mã. -->
 | Mã | Trạng thái (Chưa / Đang / Xong) | Bằng chứng (commit / CI / file) | Ghi chú |
 |---|---|---|---|
-| B-01 | |
-| B-02 | |
-| B-03 | |
-| B-04 |
-| B-05 |
-| B-06 |
-| B-07 |
-| B-08 |
-| B-09 |
-| B-10 |
-| B-11 |
-| B-12 |
+| B-01 | Đang |
+| B-02 | Đang |
+| B-03 | Đang |
+| B-04 | Đang |
+| B-05 | Đang |
+| B-06 | Đang |
+| B-07 | Đang |
+| B-08 | Đang |
+| B-09 | Đang |
+| B-10 | Đang |
+| B-11 | Đang |
+| B-12 | Đang |
 
 ### 1.2. Sửa đổi bắt buộc từ Checkpoint 1
 <!-- Các mục ❗ trong nhận xét Checkpoint 1 của nhóm. Nếu không có, ghi "Không có". -->
