@@ -34,6 +34,9 @@
 | Việc | Vai trò phụ trách | Mốc (CP2 15/11 · M3 · Freeze 19/11 · M4 20/11) | Ngày dự kiến |
 |---|---|---|---|
 | Hoàn thành trước Checkpoint 2 | Demo nội bộ | Checkpoint 2 | 17/11 |
+| M3 | M3 | M3 | 19/11 |
+| Freeze | Freeze | Freeze | 20/11 |
+| M4 | M4 | M4 | 20/11 |
 
 ### 1.4. Rủi ro / đang vướng
 - Cách tạo các file như PROGRESS.md, AI_USE.MD, ...
