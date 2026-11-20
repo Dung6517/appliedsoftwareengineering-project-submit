@@ -76,12 +76,12 @@
 | Deliverable | Có / Chưa | Đường dẫn |
 |---|---|---|
 | README.md | Chưa | |
-| REQUIREMENTS.md | Chưa | |
+| REQUIREMENTS.md | Có | |
 | DECISIONS.md / ADR | Chưa | |
 | Test tự động + CI xanh | Chưa | |
 | TEST_REPORT.md | Chưa | |
 | SECURITY_PRIVACY_CHECKLIST.md | Chưa | |
-| AI_USE.md | Có | |
+| AI_USE.md | Có | https://github.com/Dung6517/appliedsoftwareengineering-project-submit/blob/main/submissions/may_day_sprint_nhom02/artifacts/AI_USE.md |
 | CONTRIBUTIONS.md | Chưa | |
 | Slide / demo script ≤ 7 phút | Chưa | |
 | Draft PR vào `ktpmud-project`, check `validate` xanh | Có | https://github.com/fossbk-spec/ktpmud-project/pull/29 |
