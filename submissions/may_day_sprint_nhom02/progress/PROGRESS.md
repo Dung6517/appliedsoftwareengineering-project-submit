@@ -76,7 +76,7 @@
 | Deliverable | Có / Chưa | Đường dẫn |
 |---|---|---|
 | README.md | Chưa | |
-| REQUIREMENTS.md | Có | |
+| REQUIREMENTS.md | Có | https://github.com/Dung6517/appliedsoftwareengineering-project-submit/blob/main/submissions/may_day_sprint_nhom02/artifacts/DECISIONS.md |
 | DECISIONS.md / ADR | Chưa | |
 | Test tự động + CI xanh | Chưa | |
 | TEST_REPORT.md | Chưa | |
