@@ -34,9 +34,9 @@
 | Việc | Vai trò phụ trách | Mốc (CP2 15/11 · M3 · Freeze 19/11 · M4 20/11) | Ngày dự kiến |
 |---|---|---|---|
 | Hoàn thành trước Checkpoint 2 | Demo nội bộ | Checkpoint 2 | 17/11 |
-| M3 | M3 | M3 | 19/11 |
-| Freeze | Freeze | Freeze | 20/11 |
-| M4 | M4 | M4 | 20/11 |
+| M3 | Test, CI, privacy/security, audit, tài liệu bàn giao | M3 | 19/11 |
+| Freeze | Gắn tag/release candidate và commit hash cuối | Freeze | 20/11 |
+| M4 | 	Pull Request nộp bài; CI xanh | M4 | 20/11 |
 
 ### 1.4. Rủi ro / đang vướng
 - Cách tạo các file như PROGRESS.md, AI_USE.MD, ...
@@ -49,6 +49,7 @@
 |---|---|---|
 | Code/case | Hỗ trợ chạy thuật toán | bc7df5fa2ecbb6f880a703abf5c043ffaf70ae0b |
 | Nộp bài | Nộp bài, kiểm tra file nộp | This file |
+| Fork 
 
 ## PC-2 — 18/11/2026
 
