@@ -103,7 +103,6 @@
 ### 2.5. Rủi ro / câu hỏi cho GV
 - Rủi ro: đồ án PBL chạy song song, trùng giai đoạn tích hợp cuối; thời gian còn lại đến Freeze ngắn.
 - Rủi ro: CI của starter Track A có lỗi đã được sửa ở tag `bkt-2026-v1.1` (erratum #16); cần kiểm tra fork đã áp dụng chưa.
-- Q1: ⟨ĐIỀN câu hỏi thật của nhóm⟩
 
 ## Kết quả cuối — Freeze 19/11/2026
 - Tag: bkt-2026-n02-rc1 · SHA: ⟨ĐIỀN sau khi freeze⟩
