@@ -17,8 +17,8 @@
 | A-06 | Đang |
 | A-07 | Đang |
 | A-08 | Đang |
-| A-09 | Đang |
-| A-10 | Đang |
+| A-09 | Xong | https://github.com/fossbk-spec/ktpmud-project/pull/29 |
+| A-10 | Xong |
 | A-11 | Xong | README.md | |
 
 ### 1.2. Sửa đổi bắt buộc từ Checkpoint 1
@@ -49,7 +49,7 @@
 |---|---|---|
 | Code/case | Hỗ trợ chạy thuật toán | bc7df5fa2ecbb6f880a703abf5c043ffaf70ae0b |
 | Nộp bài | Nộp bài, kiểm tra file nộp | This file |
-| Fork 
+| Fork | | https://github.com/fossbk-spec/ktpmud-project/pull/29 | 
 
 ## PC-2 — 18/11/2026
 
@@ -58,36 +58,39 @@
 |---|---|---|---|
 | Checkpoint 1 | 8/11 | 10/11 | Vướng lịch trình thi giữa kỳ |
 | Hoàn thành trước Checkpoint 2 (demo nội bộ) | 17/11 | 17/11 |  |
+| M3 | 19/11 | 20/11 | Bị vướng lịch trình của cả 2 thành viên |
+| Freeze | 20/11 | 21/11 | Còn vấn đề với PROGRESS.md |
+| M4 | 21/11 | 21/11 | |
 
 ### 2.2. Tiến độ theo acceptance criteria (cập nhật toàn bộ bảng 1.1)
 > Điều chỉnh so với PC-1: bảng 1.1 ghi nhầm mã Track B (B-01…B-12). Nhóm làm **Track A** nên bảng này dùng đúng mã A-01…A-11 (đề thi Mục 7.3).
 
 | Mã | Trạng thái | Bằng chứng | Ghi chú |
 |---|---|---|---|
-| A-01 | Đang |
-| A-02 | Đang |
-| A-03 | Đang |
-| A-04 | Đang |
-| A-05 | Đang |
-| A-06 | Đang |
-| A-07 | Đang |
-| A-08 | Đang |
-| A-09 | Đang |
-| A-10 | Đang |
+| A-01 | Xong |
+| A-02 | Xong |
+| A-03 | Xong |
+| A-04 | Xong |
+| A-05 | Xong |
+| A-06 | Xong |
+| A-07 | Xong |
+| A-08 | Xong |
+| A-09 | Xong |
+| A-10 | Xong |
 | A-11 | Xong | README.md | |
 
 ### 2.3. Sẵn sàng nộp bài (đề thi Mục 6)
 | Deliverable | Có / Chưa | Đường dẫn |
 |---|---|---|
-| README.md | Chưa | |
-| REQUIREMENTS.md | Có | https://github.com/Dung6517/appliedsoftwareengineering-project-submit/blob/main/submissions/may_day_sprint_nhom02/artifacts/DECISIONS.md |
-| DECISIONS.md / ADR | Chưa | |
-| Test tự động + CI xanh | Chưa | |
-| TEST_REPORT.md | Chưa | |
-| SECURITY_PRIVACY_CHECKLIST.md | Chưa | |
+| README.md | Có | https://github.com/Dung6517/appliedsoftwareengineering-project-submit/blob/main/submissions/may_day_sprint_nhom02/README.md |
+| REQUIREMENTS.md | Có | https://github.com/Dung6517/appliedsoftwareengineering-project-submit/blob/main/submissions/may_day_sprint_nhom02/artifacts/REQUIREMENTS.md |
+| DECISIONS.md / ADR | Có |  https://github.com/Dung6517/appliedsoftwareengineering-project-submit/blob/main/submissions/may_day_sprint_nhom02/artifacts/DECISIONS.md |
+| Test tự động + CI xanh | Có | https://github.com/fossbk-spec/ktpmud-project/pull/29 |
+| TEST_REPORT.md | Có | https://github.com/Dung6517/appliedsoftwareengineering-project-submit/blob/main/submissions/may_day_sprint_nhom02/artifacts/TEST_REPORT.md |
+| SECURITY_PRIVACY_CHECKLIST.md | Có | https://github.com/Dung6517/appliedsoftwareengineering-project-submit/blob/main/submissions/may_day_sprint_nhom02/artifacts/SECURITY_PRIVACY_CHECKLIST.md |
 | AI_USE.md | Có | https://github.com/Dung6517/appliedsoftwareengineering-project-submit/blob/main/submissions/may_day_sprint_nhom02/artifacts/AI_USE.md |
-| CONTRIBUTIONS.md | Chưa | |
-| Slide / demo script ≤ 7 phút | Chưa | |
+| CONTRIBUTIONS.md | Có |  |
+| Slide / demo script ≤ 7 phút | Có | https://github.com/Dung6517/appliedsoftwareengineering-project-submit/blob/main/submissions/may_day_sprint_nhom02/artifacts/TEST_REPORT.md |
 | Draft PR vào `ktpmud-project`, check `validate` xanh | Có | https://github.com/fossbk-spec/ktpmud-project/pull/29 |
 
 > Lưu ý: bảng này nhóm cần tự rà lại theo thực tế tại thời điểm commit PC-2. Một số file (vd REQUIREMENTS.md) PC-1 đã ghi "Xong" thì chuyển thành "Có" kèm đường dẫn.
@@ -95,14 +98,7 @@
 ### 2.4. Việc còn lại đến Freeze (23:59 19/11)
 | Việc | Vai trò phụ trách | Hạn |
 |---|---|---|
-| Mở Draft PR vào `ktpmud-project`, check `validate` xanh (erratum #28) | Nộp bài | 18/11, trước 11:30 |
-| Hoàn thiện `classify()` + audit + xử lý input lỗi (A-01…A-06) | Code/case | 18/11 |
-| Bộ unit test normal/boundary/invalid/missing + CI xanh (A-07…A-09) | Code/case | 18/11 |
-| Benchmark p50/p95, ghi vào TEST_REPORT.md (A-10) | Code/case | 19/11 |
-| DECISIONS.md/ADR, TEST_REPORT.md, SECURITY_PRIVACY_CHECKLIST.md | ⟨ĐIỀN⟩ | 19/11 |
-| AI_USE.md, CONTRIBUTIONS.md | Nộp bài | 19/11 |
-| Slide / demo script ≤ 7 phút | ⟨ĐIỀN⟩ | 19/11 |
-| Gắn tag `bkt-2026-n02-rc1`, ghi SHA vào `source-ref.json` (đủ 6 trường) | Nộp bài | 19/11, trước 23:59 |
+| Gắn tag `bkt-2026-n02-rc1`, ghi SHA vào `source-ref.json` (đủ 6 trường) | Nộp bài | 21/11, trước 23:59 |
 
 ### 2.5. Rủi ro / câu hỏi cho GV
 - Rủi ro: đồ án PBL chạy song song, trùng giai đoạn tích hợp cuối; thời gian còn lại đến Freeze ngắn.
