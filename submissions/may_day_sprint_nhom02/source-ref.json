@@ -4,5 +4,5 @@
   "fork_url": "https://github.com/Dung6517/bkt-2026-v1/",
   "final_commit": "bc7df5fa2ecbb6f880a703abf5c043ffaf70ae0b",
   "release_tag": "bkt-2026-n02-rc1",
-  "ci_run_url": "https://github.com/fossbk-spec/ktpmud-project/actions/runs/44772901298/job/136414928217?pr=29"
+  "ci_run_url": "https://github.com/Dung6517/bkt-2026-v1/actions/workflows/test.yml"
 }
